@@ -1,0 +1,22 @@
+<!--<button class="btn btn-light" [disabled]="!allowNewServer">Add Server</button>-->
+<!--<button class="btn btn-dark" (click)="onAllowNew()">{{ allow_new_server }}</button>-->
+<!--<label for="ngModel">Test ngModel</label>-->
+<!--<input type="text" class="form-control" id="ngModel" (input)="onUpdateServerName($event)">-->
+<!--<label for="theNewServerName">Enter the new server name :</label>-->
+<!--<input type="text" class="form-control" id="theNewServerName" [(ngModel)]="newServerName">-->
+<!--<label for="username">Username :</label>-->
+<!--<input id="username" type="text" class="form-control" [(ngModel)]="username">-->
+<!--<button [disabled]="username === ''" class="btn btn-success" (click)="onResetUserName()">Reset user</button>-->
+<!--<p>Username : {{username}}</p>-->
+<!--<label for="serverName">Enter the server name :</label>-->
+<!--<input type="text" class="form-control" id="serverName" [(ngModel)]="serverName" placeholder="server Name">-->
+<!--<button class="btn btn-info" (click)="onCreateServer()">CreateServer</button>-->
+<!--<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>-->
+<!--<app-server></app-server>-->
+<!--<app-server></app-server>-->
+<!--{{newServerName}}-->
+<button class="btn btn-info" (click)="onShowDetail()">Display Details</button>
+<p *ngIf="showDetail">'Secret Password = tuna'</p>
+<div *ngFor="let log of buttonClick">
+  <p>{{ log }}</p>
+</div>
