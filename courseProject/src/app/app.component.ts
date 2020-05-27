@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'courseProject';
+  redirection: string = 'recipes';
+
+  onNavigate(location) {
+    this.redirection = location;
+  }
 }
