@@ -8,6 +8,9 @@
 
 <div class="row">
   <div class="col-12">
-    <app-recipe-item *ngFor="let recipeToChild of recipes" [recipe]="recipeToChild"></app-recipe-item>
+    <app-recipe-item *ngFor="let recipeEl of recipes"
+                     [recipe]="recipeEl"
+                     (recipeSelected)="onRecipeSelected(recipeEl)"
+    ></app-recipe-item>
   </div>
 </div>
